@@ -1,11 +1,9 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00b7ff;
-}
+  color: #00b7ff; }
 
 .homepage {
   display: flex;
@@ -13,5 +11,6 @@ a {
   text-align: right;
   background-image: url(/images/cinema.jpg);
   background-position: center;
-  background-size: cover;
-}
+  background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */
