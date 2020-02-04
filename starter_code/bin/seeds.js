@@ -85,6 +85,7 @@ const Movie = require("../models/Movie");
 const mongoose = require("mongoose");
 
 mongoose.connect("mongodb://localhost/movieLab");
+
 Movie.collection.drop();
 
 Movie.create(movies)

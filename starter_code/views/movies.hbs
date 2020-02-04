@@ -1,4 +1,28 @@
 <h1>Movies</h1>
-{{#each items }}
+<div calss="movies">
+    {{#each moviesList}}
 
-{{/each}}
+    <h3>{{title}}</h3>
+
+    <div class="movie-details">
+        <div class="movie-poster">
+            <img src="{{image}}" alt="poster for {{title}}" width="150px">
+            <button> <a href="/movies/{{_id}}">View Showtimes</a></button>
+
+            <div class="movie-info">
+                <p>Directed by {{director}}</p>
+                <p>Cast:
+                    <ul>
+                        {{#each stars}}
+                        <span>
+                            <li>{{this}}</li>
+                        </span>
+                        {{/each}}
+                    </ul>
+                </p>
+                <p>{{description}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
